@@ -1,0 +1,82 @@
+
+@import url('../components/btn.css');
+
+.portfolio {
+  background-color: var(--maximum-yellow-red_a10);
+  margin-top: 6%;
+  padding: 60px 0; /* Adjust padding for top and bottom */
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.portfolio-card {
+  flex: 0 0 calc(50% - 12.5px);
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.portfolio-card .card-content {
+  border: 2px solid var(--jet);
+  box-shadow: 0 0 0 var(--jet);
+  transition: var(--transition-1);
+  padding: 20px;
+  border-radius: 8px; /* Add border-radius here */
+}
+
+.portfolio-card:hover .card-content { /* Adjust the hover effect to apply on the card content */
+  box-shadow: 3px 3px 0 var(--jet);
+}
+
+.portfolio-card .chip {
+  background-color: var(--orange-red_a20);
+  max-width: max-content;
+  color: var(--jet);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 6px 20px;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.portfolio-card .title-md {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.portfolio-card .card-text {
+  font-size: 1rem;
+  color: var(--jet);
+  margin-bottom: 10px;
+}
+
+.portfolio-card .btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: var(--jet);
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.portfolio-card .btn:hover {
+  background-color: var(--orange-red);
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .portfolio-card {
+    flex: 0 0 calc(50% - 25px);
+  }
+}

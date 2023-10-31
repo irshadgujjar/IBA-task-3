@@ -1,0 +1,51 @@
+
+@import url('../components/card.css');
+@import url('../components/btn.css');
+
+/*-----------------------------------*\
+  #SERVICES
+\*-----------------------------------*/
+
+.service { padding-block-start: calc(var(--section-padding) + 60px); }
+
+.service-list {
+  display: grid;
+  gap: 25px;
+}
+
+.card-title { margin-block-end: 10px; }
+
+.card ion-icon { font-size: 3.2rem; }
+
+.card .body-sm { color: var(--jet); }
+
+.image img {
+  width: 100% !important;
+  height: 300px !important;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  .service-list { grid-template-columns: 1fr 1fr; }
+
+}
